@@ -72,17 +72,85 @@ Para projetos maiores, com maior necessidade de planejamento, documentação e a
 
 ---
 
-## Estrutura
+## Como usar o framework
 
-O repositório contém três documentos principais:
+O framework possui **três documentos**, mas eles têm funções diferentes. Para evitar dúvidas durante uma análise, use esta regra:
 
-### `framework-lite.md`
+> **`framework-lite.md` = referência para pensar**
+>
+> **`template-analise-lite.md` = documento para preencher**
+>
+> **`checklist-projeto-curto.md` = verificação do projeto**
 
-Apresenta o processo completo do Framework Lite e as perguntas que orientam cada etapa da análise.
+### Ordem de uso
 
-### `template-analise-lite.md`
+A análise deve seguir a mesma ordem do processo analítico:
 
-Template reutilizável para documentar uma análise curta, incluindo:
+```text
+1. Entender
+      ↓
+2. Perguntar
+      ↓
+3. Analisar
+      ↓
+4. Interpretar
+      ↓
+5. Concluir
+```
+
+E os documentos entram dessa forma:
+
+| Momento | O que fazer | Documento | Ação |
+|---|---|---|---|
+| **Antes de começar** | Consultar o processo, as perguntas orientadoras e os princípios da análise | `framework-lite.md` | **Consultar** |
+| **Entender** | Registrar contexto e entendimento dos dados | `template-analise-lite.md` | **Preencher** |
+| **Perguntar** | Definir pergunta principal, perguntas analíticas e hipóteses | `template-analise-lite.md` | **Preencher** |
+| **Analisar** | Executar as análises necessárias e registrar as evidências encontradas | `template-analise-lite.md` | **Preencher** |
+| **Interpretar** | Explicar o significado dos resultados e transformar evidências em interpretações | `template-analise-lite.md` | **Preencher** |
+| **Concluir** | Registrar conclusões, limitações e aprendizados | `template-analise-lite.md` | **Preencher** |
+| **Final do projeto** | Verificar se as perguntas foram respondidas e se a análise está completa | `checklist-projeto-curto.md` | **Revisar** |
+
+### Regra prática
+
+Durante um projeto, pense nos documentos assim:
+
+```text
+                 REFERÊNCIA
+                     │
+                     ▼
+          framework-lite.md
+                     │
+                     │ orienta
+                     ▼
+              ┌───────────────┐
+              │    ANÁLISE    │
+              └───────────────┘
+                     │
+                     ▼
+       template-analise-lite.md
+              (documento principal)
+                     │
+                     │ ao finalizar
+                     ▼
+        checklist-projeto-curto.md
+              (verificação final)
+```
+
+### O papel de cada documento
+
+#### `framework-lite.md`
+
+É o **manual de referência**.
+
+Use este documento para entender **como pensar e conduzir a análise**. Ele apresenta o processo completo e as perguntas que orientam cada etapa.
+
+**Não é necessário preenchê-lo a cada projeto.**
+
+#### `template-analise-lite.md`
+
+É o **documento principal de trabalho**.
+
+Crie ou copie uma versão desse template para cada análise e preencha ao longo do projeto. Ele concentra a documentação da análise, incluindo:
 
 - contexto;
 - entendimento dos dados;
@@ -95,9 +163,40 @@ Template reutilizável para documentar uma análise curta, incluindo:
 - limitações;
 - aprendizados.
 
-### `checklist-projeto-curto.md`
+**Este é o documento que você vai preencher.**
 
-Checklist para acompanhar o projeto e identificar quando a análise possui evidências suficientes para ser considerada concluída.
+#### `checklist-projeto-curto.md`
+
+É a **checagem final**.
+
+Use-o depois de concluir a análise para verificar se o projeto possui evidências suficientes e se as perguntas propostas foram respondidas.
+
+**Não substitui o template; serve para revisar o resultado final.**
+
+### Fluxo recomendado
+
+Na prática, o uso do framework pode ser resumido em:
+
+```text
+CONSULTAR
+framework-lite.md
+       ↓
+PREENCHER
+template-analise-lite.md
+       ↓
+EXECUTAR A ANÁLISE
+SQL / Python / Excel / Power BI etc.
+       ↓
+ATUALIZAR O TEMPLATE
+com evidências, interpretações e conclusões
+       ↓
+REVISAR
+checklist-projeto-curto.md
+       ↓
+CONCLUIR O PROJETO
+```
+
+> **Regra para memorizar:** consulte o framework, preencha o template e revise com o checklist.
 
 ---
 
